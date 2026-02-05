@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+</head>
+<style>
+    .container{
+        background-color: bisque;
+        width: 50vw;
+        height: 50vh;
+    }
+    .box{
+        background-color: aqua;
+        width: 5vw;
+        height: 5vh;
+        /* animation-name: SmaranAnimation;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.33, 0.54,0.9, 0.2);
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;
+        animation-play-state: running; */
+        /* animation:SmaranAnimation 3s cubic-bezier(0.33, 0.54,0.9, 0.2) 2s infinite alternate-reverse; */
+          animation:SmaranAnimation 3s cubic-bezier(0.33, 0.54,0.9, 0.2) 2s infinite backwards,
+                    Smaran2 3s linear 1s infinite normal;
+                    
+     
+
+    }
+    @keyframes SmaranAnimation{
+        from{
+            background-color: red;
+            color: blue;
+        }
+        to{
+            background-color: yellow;
+            color: blanchedalmond;
+            transform:translateX(1000px);
+        }
+    }
+    @keyframes Smaran2{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(100deg);
+        }
+        50%{
+            transform:rotate(200deg);
+        }
+        75%{
+            transform:rotate(300deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            Animation example
+        </div>
+    </div>
+
+    
+</body>
+</html>

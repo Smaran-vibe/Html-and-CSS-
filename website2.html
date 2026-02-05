@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit website</title>
+
+</head>
+<style>
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Segoe UI";
+      
+
+    }
+
+    .ue {
+        background-color: black;
+        color: #F3E212;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .UE {
+        background-color: #FDE503;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+
+    }
+
+    .Name {
+        font-weight: lighter;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo h2 {
+        gap: 5px;
+
+    }
+
+    .logo2 h3 {
+        gap: 5px;
+        display: flex;
+        align-items: first baseline;
+        padding: 10px;
+        margin: 10px;
+
+
+    }
+
+    .version {
+        font-weight: lighter;
+        font-size: small;
+        font-family: 'Seogoe UI';
+    }
+
+
+
+    .right ul {
+        display: flex;
+        list-style: none;
+        gap: 34px;
+    }
+
+    .right ul li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .right ul li span {
+        padding: 0 5px;
+    }
+
+    main {
+        display: grid;
+        place-content: center;
+        text-align: center;
+        padding: 60px 20px;
+
+    }
+
+    .headings {
+        max-width: 600px;
+        font-family: "Segoe UI";
+    }
+
+    .headings h1 {
+        font-weight: normal;
+    }
+
+    .headings span {
+        font-weight: bold;
+    }
+
+    .button button {
+        padding: 12px 30px;
+        border-radius: 6px;
+        background-color: #02B6CF;
+        color: #D4FFFF;
+        font-size: 15px;
+        margin-top: auto;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: "Segoe UI";
+    }
+
+    .button button:hover {
+        background-color: #36daf0;
+
+    }
+
+    .cards {
+        display: grid;
+        width: 80vw;
+         margin: 0 auto;
+        grid-template-columns: repeat(3, 350px);
+        row-gap: 10px;
+        justify-content: center;
+   
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+    }
+
+  
+    
+
+    .card {
+        background-color: #F9F9F9;
+        padding: 10px 14px;
+        width: 270px;
+        min-height: 140px;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        margin: 5px;
+
+    }
+    .card p{
+        font-size: small;
+        font-weight:normal;
+        margin-bottom: 0;
+     
+      
+    }
+
+    .card button {
+        padding: 7px 8px;
+        background-color: #02B6D0;
+        border: none;
+        border-radius: 5px;
+        margin: 15px 5px;
+        font-weight: bold;
+        font-family: 'Segoe UI';
+        color: #F9F9F9;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+    .card button:nth-child(3) {
+        background-color: #5DB75E;
+    }
+
+    .card button:hover {
+        background-color: #a3eff9;
+    }
+
+    .card button:hover:nth-child(3) {
+        background-color: #c2f8c2;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>
+                    <span class="ue">UE</span>
+                    <span class="name">UltraEdit</span>
+                </h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Pricing</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>About Us</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+            </div>
+
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headings">
+            <h1>Download <span>UltraEdit</span> for Windows </h1>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor</p>
+        </div>
+        <div class="button">
+            <button>Download Mac or Linux Version</button>
+
+            <div class="logo2">
+                <h3>
+                    <span class="UE">UE</span>
+                    <span class="Name">Download UltraEdit</span>
+                    <span class="version">v2023.1(released 08/16/2023)|Hotflix</span>
+                </h3>
+            </div>
+
+
+    </main>
+    <div class="cards">
+        <div class="card">
+            <h4>English</h4>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>Deutsch</h4>
+            <p>German </p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>Italiano</h4>
+            <p>Italian</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>Espanol</h4>
+            <p>Spanish</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>francais</h4>
+            <p>French</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>Portugues brasileiro</h4>
+            <p>Brazilian Portugese</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>中国人</h4>
+            <p>Zhōngguó rén</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>한국인</h4>
+            <p>Korean</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>日本語</h4>
+            <p>Japanese</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+        <div class="card">
+            <h4>नेपाली</h4>
+            <p>Nepali</p>
+            <button>Download 32-bit</button>
+            <button>Download 64-bit</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
